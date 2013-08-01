@@ -1,0 +1,19 @@
+{
+    ".about": true,
+    ".blank": false,
+    ".faq": false,
+    ".footer": false,
+    ".heading": false,
+    ".logo": false,
+    ".navigation": false,
+    ".order": false,
+    ".pich": false,
+    ".section1": false,
+    ".section2": false,
+    ".social": false,
+    ".subheading": false,
+    ".thermometer": false,
+    ".video": false,
+    "div": true,
+    "h1": true
+}

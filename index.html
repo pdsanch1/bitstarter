@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css"
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css"
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Poen+Sans:300italic,400italic,500italic,600italic,700italic,300,400,600,700,800"
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,500italic,600italic,700italic,300,400,600,700,800"
           type="text/css" rel="stylesheet">
     <style type="text/css">
 
     /* Large Desktop */
-    @media(min-width:980px) {
+    @media (min-width:980px) {
       body {
          padding-top: 60px;
       }
       .linediv-l {
-        border-rigth: 1px white solid;
+        border-right: 1px white solid;
       }
       .linediv-r {
         border-left: 1px white solid;
@@ -33,9 +35,9 @@
         padding: 2.5% 10%
       }
       .linediv-l {
-        border-botton: 1px white solid;
+        border-bottom: 1px white solid;
       }
-      .linediv-l {
+      .linediv-r {
         border-top: 1px white solid;
       }
     }
@@ -64,8 +66,11 @@
       .pitch {
         padding: 2.5% 0%;
       }
+      .order {
+        padding: 2% 0%;
+      }
       .actions {
-        background-color: #242424;
+        background-color: #343434;
         padding: 3% 0%;
       }
       .video, .thermometer, .order, .social {
@@ -78,7 +83,7 @@
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
-        padding-botton: 2.5%;
+        padding-bottom: 2.5%;
         text-align: justify;
       }
       .asset {
@@ -88,10 +93,10 @@
         color: #cccccc;
         text-align: center;
       }
-      .footer-p {
+      .footer p {
         font-size: 11px;
       }
-      .footer-a {
+      .footer a {
         color: #ccccff;
       }
     </style>  
@@ -99,7 +104,7 @@
   <body>
 
     <!-- Mobile-friendly navbar adapted from example.  -->
-    <!-- http://getbootstrap.com/2.3.2/getting-started.html#examples
+    <!-- http://getbootstrap.com/2.3.2/getting-started.html#examples -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -152,6 +157,11 @@
                 <h3>$6000</h3> <p>of $10,000</p>
               </div>
             </div>
+            <div class="span4">
+              <div class="linediv-r">
+                <h3>10</h3> <p>days left</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="span10 offset1">
@@ -159,10 +169,18 @@
             <div class="bar bar-success" style="width: 60%;"></div>
             <div class="bar bar-warning" style="width: 40%;"></div>
          </div>
-        <div class="span6 offset3 order">
-          <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-          <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
         </div>
+          <div class="span6 offset3 order">
+            <!-- Standard Bootstrap button. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+            <button class="btn btn-success btn-large">Preorder</button>
+          </div>
+          <div class="span8 offset2 social">
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
       </div>
     </div>
       <!-- Beyond this part the marketing copy begins. -->
@@ -171,7 +189,7 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="hw4aa_files/480x300.gif">
+          <img class="img-polaroid" src="http://placehold.it/480x300.gif">
         </div>
         <div class="span5 copy">
           <p>
@@ -207,7 +225,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="hw4aa_files/480x300.gif">
+          <img class="img-polaroid" src="http://placehold.it/480x300.gif">
         </div>
       </div>
 
